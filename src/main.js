@@ -16,6 +16,7 @@ button.addEventListener('click', async () => {
 
     // Verificação
     if (!baseCurrency) {
+        referencia.innerHTML = '';
     // eslint-disable-next-line no-undef
         Swal.fire({
             icon: 'error',
@@ -23,6 +24,7 @@ button.addEventListener('click', async () => {
             text: 'Insira uma moeda!',
         });
     } else if (!moedas[baseCurrency]) {
+        referencia.innerHTML = '';
     // eslint-disable-next-line no-undef
         Swal.fire({
             icon: 'error',
